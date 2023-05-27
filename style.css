@@ -1,0 +1,128 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  background: #e3e3e3;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  background: white;
+  margin-bottom: 0;
+}
+
+.nav > a {
+  margin-right: 60px ;
+  color: black;
+  transition: all 150ms ease-in-out;
+}
+
+.nav > a:last-child {
+  margin-right: 80px ;
+}
+
+.nav > a:hover {
+  text-decoration: underline;
+}
+
+.main-body{
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url('img/pagebackground2.jpg');
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.front-matter{
+  color: rgb(1, 30, 7);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: large;
+  text-align: center;
+
+}
+h1 { 
+  font-size: 300%; }
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+#search {
+  display: inline-block;
+  width: 600px; /* Increase the width */
+  height: 20px; /* Increase the height */
+  padding: 10px; /* Adjust padding for better appearance */
+  margin: auto;
+  justify-content: center;
+
+
+}
+.dropdown {
+  position: absolute;
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.circular-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f0ffff;
+  height: 500px;
+  width: 500px;
+}
+.circular-progress {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background: conic-gradient(#7d2 3.6deg,#e3e3e3 0deg);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  background-color: #f0ffff;
+  border-radius: 50%;
+}
+.progress-value {
+  position: relative;
+  font-size: 50px;
+  font-weight: 500;
+}
+.resulttext {
+  font-size: 30px;
+  font-weight: 500;
+}
